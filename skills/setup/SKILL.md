@@ -126,8 +126,10 @@ Write `ABOUT ME/my-company.md`: under 1,000 words, bullets over paragraphs, thre
 
 Interview, one question at a time:
 
-- **Words they don't use:** offer the common AI words (delve, harness, tapestry, unlock, elevate, journey) and ask which to ban; industry jargon they avoid; marketing cliches that bother them
-- **Patterns they reject:** the "this isn't X, it's Y" reframe, excessive sentence fragments, bullet points where prose would do, em dashes if they hate them
+- **Words they don't use:** offer the common AI words (delve, harness, tapestry, unlock, journey, multifaceted, utilize) and ask which to ban; industry jargon they avoid; marketing cliches that bother them
+- **Patterns they reject:** the "this isn't X, it's Y" reframe, excessive sentence fragments, bullet points where prose would do, and em dashes specifically, most people have never consciously noticed these, but plenty dislike them once it's pointed out, so ask directly rather than assuming it's fine
+- **Lived experience:** ask if they want real personal detail and stories woven into their writing, rather than generic claims standing in for them
+- **Positioning:** ask how they want to come across to the reader (an authority, a peer, a guide, something else entirely), don't assume which one fits them
 - **Formatting they care about:** sentence length, paragraph length, capitalization, punctuation formality
 - **What their writing must always do:** the 2 or 3 things every piece should achieve; voice qualities that must be present
 
