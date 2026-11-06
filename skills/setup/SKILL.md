@@ -64,9 +64,9 @@ Tell them in one friendly sentence what you just built. No jargon.
 
 Then ask (one question):
 
-> "Before we start, have you been using another AI tool — ChatGPT, Claude on the web, or the Claude desktop app? If you have, there may be context we can bring over so you don't repeat yourself."
+> "Before we start, have you been using another AI tool — ChatGPT, Gemini, Claude on the web, or the Claude desktop app? If you have, there may be context we can bring over so you don't repeat yourself."
 
-- **ChatGPT:** give them these four prompts to paste into ChatGPT (all at once is fine over there), and tell them to paste the answers back here:
+- **ChatGPT or Gemini:** give them these four prompts to paste into that tool (all at once is fine over there), and tell them to paste the answers back here:
   1. "Look back across our conversations and tell me what you've learned about me as a person and as a business owner."
   2. "Summarize what you know about my business."
   3. "Summarize what you know about my ideal client."
