@@ -5,7 +5,7 @@ description: One-paste workspace setup. Builds the entire Claude foundation for 
 
 # SKILL: setup
 
-You are setting up a brand-new Claude workspace for someone who has never used a tool like this. They are not technical. They may have never opened VS Code before today. Your job is to do ALL the technical work yourself and only ask them questions a friend could answer over coffee.
+You are setting up a brand-new Claude workspace for someone who has never used a tool like this. They are not technical. They may have never opened the Code tab in the Claude desktop app before today. Your job is to do ALL the technical work yourself and only ask them questions a friend could answer over coffee.
 
 Follow the steps below IN ORDER. Do not skip, reorder, or improvise steps. Do not invent extra files or extra questions. Where a template is given, use it verbatim.
 
@@ -13,7 +13,7 @@ Follow the steps below IN ORDER. Do not skip, reorder, or improvise steps. Do no
 
 - One question at a time. Wait for the answer. Never dump a list of questions.
 - Plain, warm language. Never say "directory," "repo," "markdown," or "root." Say "folder" and "file."
-- Show every file you draft and get a yes before saving. If they change a line, their version wins.
+- Show every file you draft and get a yes before saving. If they change a line, their version wins. CLAUDE.md and the weekly check-in are fixed templates, so they don't need a yes.
 - After completing each step, update `setup-progress.md` (see Step 0) before moving on.
 - If anything fails, tell them plainly what happened and continue with the next thing that can work. Never leave them stuck.
 
@@ -23,6 +23,7 @@ Follow the steps below IN ORDER. Do not skip, reorder, or improvise steps. Do no
 
 Look for a file called `setup-progress.md` in the current folder (or in a `Claude` subfolder).
 
+- **If it exists and every step is ticked:** tell them setup is already finished and ask what they'd like to work on. Stop here.
 - **If it exists:** read it, tell them warmly where they left off ("Welcome back — we finished your about-me file last time, so we'll pick up at your ideal client"), and resume at the first unfinished step. Do not redo finished steps.
 - **If it doesn't exist:** this is a fresh run. After Step 1, create `setup-progress.md` in the workspace folder with this exact content, then keep it updated by changing `[ ]` to `[x]` as steps finish:
 
@@ -46,7 +47,7 @@ Look for a file called `setup-progress.md` in the current folder (or in a `Claud
 Decide where the workspace lives, with this exact rule:
 
 - If the folder currently open is named `Claude` (any capitalization) or is empty except for setup files, build directly in it.
-- Otherwise, create a folder named `Claude` inside the current folder and build everything in there. Also move the `.claude` folder (which holds this skill and build-icp) into that Claude folder so everything travels together. At the very end of setup (Step 10), tell them to go to File → Open Folder and pick that Claude folder so it opens by default next time.
+- Otherwise, create a folder named `Claude` inside the current folder and build everything in there. Also move the `.claude` folder (which holds this skill and build-icp) into that Claude folder so everything travels together. At the very end of setup (Step 10), tell them to pick that Claude folder with the folder control under the message box whenever they start a new session.
 
 Inside the workspace folder, create:
 
@@ -70,8 +71,8 @@ Then ask (one question):
   2. "Summarize what you know about my business."
   3. "Summarize what you know about my ideal client."
   4. "Pull out writing samples you've created for me that I responded to most positively."
-- **Claude web or desktop with saved files:** ask them to drop those files into the ABOUT ME folder (tell them exactly how: drag the files onto the file list on the left). Read them.
-- **Starting fresh:** fine. Move on.
+- **Claude web or desktop with saved files:** ask them to drop those files into the ABOUT ME folder (tell them exactly how: open the ABOUT ME folder in File Explorer on Windows or Finder on Mac and copy the files in). Read them.
+- **Claude on the web with nothing saved, or starting fresh:** fine. Move on.
 
 Fold everything harvested into your working draft. In the interviews that follow, **confirm what you already know in one line and spend the questions only on gaps.**
 
@@ -95,15 +96,15 @@ Write `ABOUT ME/about-me.md`: under 2,000 words, patterns extracted (not raw Q&A
 
 ## STEP 4 — Build ideal-client.md (the full ICP interview lives here)
 
-This step IS the deep ICP interview. Read `.claude/skills/build-icp/SKILL.md` (it is installed next to this skill) and run it exactly, inside this same conversation:
+This step IS the deep ICP interview. Read the build-icp SKILL.md (it is installed in the skills folder next to this skill) and run it exactly, inside this same conversation:
 
 - Start with its fork question, exactly as written there, examples included: **"Is your buyer buying for their own life, or for their job?"** Follow the path their answer selects (consumer or professional/B2B).
-- Run the full Phase 1 interview, one question at a time.
+- Run the full Phase 1 interview, one question at a time. Every few answers, add them to `PROJECTS/ICP/interview-notes.md`, so nothing is lost if they stop partway. If that file exists when you start this step, read it and carry on from there.
 - When the interview is done, ask ONE question: "I can now go research how real people like your buyer actually talk — forums, reviews, real complaints in their own words. It sharpens everything. Want me to do that now, or after setup is finished?" Respect their answer. If later, note it in `setup-progress.md` as a to-do.
 - Build the full ICP Dossier exactly as that skill specifies (including the handoff block) and save it as `PROJECTS/ICP/icp-dossier.md`.
 - Then distill it into `ABOUT ME/ideal-client.md`: under 1,500 words, scannable, covering who they are, what they want, what they struggle with, what they fear, their real language (phrases that land and phrases to avoid), and their awareness level. On the professional path, include the buying-committee sketch.
 
-Show both files, get a yes, save. Update progress.
+The dossier is long, so save it first and tell them where to read it, then show `ideal-client.md` in full. Get a yes on both. Update progress.
 
 ---
 
@@ -116,9 +117,9 @@ Interview, one question at a time, 6 to 8 questions, gaps only:
 - **What they sell:** their offer as it stands today — name, what's in it, price, and the one transformation the buyer is really paying for, stated as a feeling
 - **Decisions:** what they're saying no to; what they recently stopped doing and why
 
-Write `ABOUT ME/my-company.md`: under 1,000 words, bullets over paragraphs, three sections (Goals / Focus right now / Saying no to). Show, yes, save.
+Write `ABOUT ME/my-company.md`: under 1,000 words, bullets over paragraphs, four sections (Goals / What I sell / Focus right now / Saying no to). Show, yes, save.
 
-**If they sell something,** also write `ABOUT ME/my-offer.md`: the current offer, price, terms, call to action, and the one-feeling transformation, with a note at the top: *"Current as of [date]. Confirm before presenting in any class or campaign."* Other skills read this file. Show, yes, save. Update progress.
+**If they sell something,** the "What I sell" section covers it: the current offer, price, terms, call to action, and the one-feeling transformation, with a dated note under the heading: *"Current as of [date]. Confirm before presenting in any class or campaign."* Keep this inside `my-company.md` rather than a separate file, so there is one home for the state of the business. Only split it into its own file if the offer spec outgrows the 1,000-word budget. Show, yes, save. Update progress.
 
 ---
 
@@ -185,7 +186,7 @@ Tell them: "Once a week, type /weekly-check-in and I'll review your foundation f
 Do both of these, in order:
 
 1. **The check:** re-read CLAUDE.md and all ABOUT ME files fresh, then tell them what you now know: who they are and how they work, who they serve, their current goals, and the writing patterns you'll avoid. Flag anything thin so they know what to strengthen later.
-2. **The feel test:** write 3 or 4 sentences in THEIR voice, to THEIR ideal client, about something they actually offer. Then ask the only question that matters: "Does this sound like you?" If yes, setup is proven. If no, ask what's off, fix the relevant file, and try once more.
+2. **The feel test:** write 3 or 4 sentences in THEIR voice, to THEIR ideal client, about something they actually offer. Then ask the only question that matters: "Does this sound like you?" If yes, setup is proven. If no, ask what's off, fix the relevant file, and try once more. If it's still not right, note what's off in `setup-progress.md`, tell them /weekly-check-in is where it gets sharper, and carry on.
 
 Update progress: mark Step 9 done.
 
@@ -195,7 +196,7 @@ Update progress: mark Step 9 done.
 
 Close with, in your own warm words:
 
-- If you built a `Claude` subfolder in Step 1: the one thing they must do now — File → Open Folder, pick the Claude folder — so every future session starts in the right place.
+- If you built a `Claude` subfolder in Step 1: the one thing they must do from now on: when starting a new session, check the folder control under the message box says Claude, so every session starts in the right place.
 - How to start any future session: just open a new conversation and say what they're working on. The foundation loads itself.
 - One habit: one task per conversation; start fresh when switching topics.
 - /weekly-check-in once a week.
